@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@types/jest": "^23.3.12",
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
