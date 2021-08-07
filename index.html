@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Paula Sánchez Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/4fcfc104cb.js" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/52982/css-doodle.min.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.2.3/dist/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.2.3/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+</head>
+
+
+<body>
+<nav id="navbar">
+    <div class="links-wrapper">
+        <ul id="links-wrapper-wrapper">
+            <li><a href="#about-me-section" class="nav-link">About me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact-section" class="nav-link"> Contact </a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="welcome-section">
+    <div id="container-hero">
+        <div id="hero">
+            <img id="image-hero"
+                 src="https://cdn.dribbble.com/users/5448869/screenshots/11964344/media/7c1a55db92d1d015c51ad7595a2b82ff.png"
+                 alt="Girl coding">
+        </div>
+        <header>
+            <h1>
+                <code><em>&lt;hello&gt;</em></code>
+                <div class="wrapper-name">
+                    <span> I'm </span>
+                    <div class="name">Paula Sanchez</div>
+                </div>
+                <span class="brmedium"></span>
+                <span>Software Developer</span>
+                <span class="brmedium"></span>
+                <code><em>&lt;/hello&gt;</em></code>
+            </h1>
+        </header>
+    </div>
+</section>
+
+<main>
+    <section id="about-me-section" class="container-section">
+        <div class="section-divider">
+            <h2>
+                About me 🙈
+            </h2>
+        </div>
+
+        <div class="content-section">
+            <div id="description-profile">
+                <p><em class="emphasize-text emphasize-text1">Creative</em> Software Engineer student
+                    <em class="emphasize-text emphasize-text2">passionate</em> about learning and growing
+                    professionally, interested in building
+                    <em class="emphasize-text emphasize-text2">innovative</em> and cutting edge business
+                    solutions. <em class="emphasize-text emphasize-text1">Effective team player</em>
+                    offering excellent analytical skills and
+                    critical thinking.
+                </p>
+
+                <div id="text-section">
+          <pre><code>
+{
+   "based_in": "Colombia",
+   "profession": "software and civil engineer",
+   "hobbies": [
+      "outdoor activities",
+      "work out",
+      "learn",
+      "paint"
+   ],
+   "life_quote": "keep on moving. keep climbing",
+   "random": "dog lover"
+}
+</code>
+  
+</pre>
+                    <a href="https://drive.google.com/file/d/1c1NQBMTbKmOy1UXCKP_2MleEXg17kpFf/view?usp=sharing"
+                       id="cv-button-container" target="_blank">
+                        <button id="cv-button">Check my resume</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="description-photo-section">
+                <h3>Tech Stack:</h3>
+
+                <div id="technologies-grid" class="tech-grid">
+                </div>
+
+                <div id="photo-section">
+                    <css-doodle grid="5" class="background-photo">
+                        :doodle {
+                        size: 40vmin;
+                        min-size: 300px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        box-shadow: inset 0 0 2vmax rgba(0, 0, 0, .3);
+                        }
+
+                        size: 50% 120%;
+                        border-radius: 50%;
+
+                        border: @rand(10px) solid hsla(
+                        calc(180 + 5 * @index()), 80%, 60%, @rand(.8)
+                        );
+
+                        transform:
+                        scaleX(@rand(5, 8))
+                        rotate(@pick(45deg, 60deg, 90deg));
+
+                    </css-doodle>
+                    <img id="paula-photo"
+                         src="https://psanchezp31.github.io/hosted-assets/images-portfolio/roundPic.png"
+                         alt="Paula Sanchez profile picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container-section">
+        <div class="section-divider">
+            <h2>
+                Projects 🙉
+            </h2>
+        </div>
+
+        <div class="slider-container">
+            <div id="options-start-at" class="slider glide">
+
+                <div class="slider__track glide__track glide__slide--active" data-glide-el="track">
+
+                    <ul class="slider__slides glide__slides">
+
+                        <a href="https://e96vy.csb.app/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project1">
+                                    <div class="gif-project" id="gif-project1"></div>
+                                </div>
+                                <div class="project-tile">Sliding Puzzle</div>
+                            </li>
+                        </a>
+
+                        <a href="https://ponor.csb.app/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project2">
+                                    <div class="gif-project" id="gif-project2"></div>
+                                </div>
+                                <div class="project-tile">Magazine Cover</div>
+                            </li>
+                        </a>
+
+                        <a href="https://7ikjx.csb.app/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project3">
+                                    <div class="gif-project" id="gif-project3"></div>
+                                </div>
+                                <div class="project-tile">Survey Form with A11Y</div>
+                            </li>
+                        </a>
+
+                        <a href="https://ty1z7.csb.app/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project4">
+                                    <div class="gif-project" id="gif-project4"></div>
+                                </div>
+                                <div class="project-tile">Sign In Unit Testing</div>
+                            </li>
+                        </a>
+
+                        <a href="https://2te2u.csb.app/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project5">
+                                    <div class="gif-project" id="gif-project5"></div>
+                                </div>
+                                <div class="project-tile">Calculator JS</div>
+                            </li>
+                        </a>
+
+                        <a href="https://maney-app-front.herokuapp.com/" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project6">
+                                    <div class="gif-project" id="gif-project6"></div>
+                                </div>
+                                <div class="project-tile">ManeyApp Money Management</div>
+                            </li>
+                        </a>
+
+                        <a href="https://codepen.io/psanchez31/full/JjWWggK" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project7">
+                                    <div class="gif-project" id="gif-project7"></div>
+                                </div>
+                                <div class="project-tile">Technical Documentation Page</div>
+                            </li>
+                        </a>
+
+                        <a href="https://codepen.io/psanchez31/full/XWMpROV" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project8">
+                                    <div class="gif-project" id="gif-project8"></div>
+                                </div>
+                                <div class="project-tile">Product Landing Page</div>
+                            </li>
+                        </a>
+
+                        <a href="https://codepen.io/psanchez31/full/Vwpjdpo" target="_blank">
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project9">
+                                    <div class="gif-project" id="gif-project9"></div>
+                                </div>
+                                <div class="project-tile">Survey Form</div>
+                            </li>
+                        </a>
+
+                        <a href="https://codepen.io/psanchez31/full/GRWZeqO" target="_blank">
+
+                            <li class="slider__frame glide__slide">
+                                <div class="image-project" id="img-project10">
+                                    <div class="gif-project" id="gif-project10"></div>
+                                </div>
+                                <div class="project-tile">Tribute Page</div>
+                            </li>
+                        </a>
+
+                    </ul>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fa fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fa fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact-section" class="container-section">
+        <div class="section-divider">
+            <h2>
+                Contact & Follow🙊
+            </h2>
+        </div>
+
+        <div class="contact-container">
+            <div id="title-contact-container">
+                <h3>Let's<br> talk|connect|work!</h3>
+            </div>
+            <ul class="links-container">
+
+                <div class="subcontainer-links">
+                    <a class="profile-link" href="https://www.linkedin.com/in/paula-sanchez-10/" target="_blank"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="subcontainer-links">
+                    <a class="profile-link" href="https://github.com/psanchezp31" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="subcontainer-links">
+                    <a class="profile-link" href="https://www.instagram.com/newbee_coding/" target="_blank"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="subcontainer-links">
+                    <a class="profile-link" href="https://www.freecodecamp.org/pausanchez" target="_blank"
+                    >
+                        <i class="fab fa-free-code-camp"></i>
+                    </a>
+                </div>
+
+                <div class="subcontainer-links">
+                    <a class="profile-link" href="https://codepen.io/psanchez31" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer-text">
+            &copy; Crafted with 💜.
+        </div>
+    </footer>
+</main>
+</body>
+
+</html>
