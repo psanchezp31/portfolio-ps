@@ -229,6 +229,10 @@ code {
     width: 280px;
 }
 
+#about-me-section{
+    padding-bottom: 30px;
+}
+
 h3 {
     display: flex;
     justify-content: center;
@@ -243,8 +247,7 @@ h3 {
     grid-template-rows: repeat(2, 100px);
     align-items: center;
     justify-content: center;
-    grid-gap: 5px;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
 }
 
 #technologies-grid i {
@@ -521,7 +524,7 @@ footer {
     }
 
     #description-profile p, #text-section code {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #cv-button {
@@ -590,6 +593,9 @@ footer {
 
     #title-contact-container h3 {
         font-size: 45px;
+    }
+    #paula-photo {
+        width: 270px;
     }
 }
 
@@ -708,6 +714,10 @@ footer {
         width: 100%;
     }
 
+    #paula-photo {
+        width: 266px;
+    }
+
 }
 
 @media screen and (max-width: 662px) {
@@ -717,7 +727,7 @@ footer {
     }
 
     #paula-photo {
-        width: 270px;
+        width: 265px;
     }
 
 }

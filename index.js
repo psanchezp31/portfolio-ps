@@ -1,4 +1,3 @@
-const {Breakpoints} = require("@glidejs/glide/dist/glide.modular.esm");
 
 document.body.addEventListener("click", function (e) {
     if (e.target.matches("css-doodle")) {
@@ -73,21 +72,28 @@ window.addEventListener('load', () => {
         autoplay: false,
         hoverpause: true,
         animationDuration: 5000,
+        breakpoints: {
+            1000:{
+                perView:3
+            },
+            800: {
+                perView: 2
+            },
+            500: {
+                perView: 1
+            }
+        },
         peek: {
             before: 50,
             after: 50
         },
 
     })
-    Breakpoints.match({
-        600: {perView: 1},
-        800: {perView: 2},
-        1200: {perView: 3}
-    })
 
     glide.mount()
 
 })
+
 
 
 
