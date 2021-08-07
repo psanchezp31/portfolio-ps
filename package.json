@@ -1,10 +1,23 @@
 {
-  "devDependencies": {
-    "@glidejs/glide": "^3.4.1",
-    "@types/jest": "^23.3.12",
-    "jest": "^23.6.0"
-  },
+  "name": "portfolio-ps",
+  "version": "1.0.0",
+  "description": "My portfolio with CSS3/HTML5 - Responsive Design",
+  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psanchezp31/portfolio-ps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psanchezp31/portfolio-ps/issues"
+  },
+  "homepage": "https://github.com/psanchezp31/portfolio-ps#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
   }
 }
