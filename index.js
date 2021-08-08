@@ -1,4 +1,3 @@
-
 document.body.addEventListener("click", function (e) {
     if (e.target.matches("css-doodle")) {
         e.target.refresh();
@@ -23,11 +22,10 @@ let icons = {
 let fragment = document.createDocumentFragment();
 
 Object.keys(icons).forEach(function (icon) {
-    console.log(icon)
     let i = document.createElement("i");
     i.id = icon;
     i.className = icons[icon] + " overlay";
-    if (i.id == "VueJs") {
+    if (i.id === "VueJs") {
         i.className += " iconfa";
     }
     i.addEventListener("mouseover", mouseOver, false);
@@ -43,7 +41,7 @@ grid.children;
 function mouseOver(event) {
     let elementHoverId = this.id;
     event.target.innerHTML = elementHoverId;
-    if (elementHoverId == 'VueJs') {
+    if (elementHoverId === 'VueJs') {
         event.target.innerHTML = "";
     }
     event.target.style.fontSize = "15px";
@@ -51,12 +49,52 @@ function mouseOver(event) {
     event.target.style.fontStyle = "normal";
 }
 
+
 function mouseOut(event) {
     event.target.innerHTML = "";
     event.target.style.fontSize = "50px";
     event.target.style.transition = ".3s ease";
+    changeFontSizeScreenSize(event);
+
 }
 
+function changeFontSizeScreenSize(event) {
+    let x = window.matchMedia("(max-width: 610px)");
+    let y = window.matchMedia("(max-width: 472px)");
+    if (x.matches) {
+        event.target.style.fontSize = "40px";
+    }
+    if (y.matches) {
+        event.target.style.fontSize = "35px";
+    }
+}
+
+changeFontSizeScreenSize();
+
+
+const deviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
+
+function showTecnologiesNames() {
+    if (deviceType() === "tablet" || deviceType() === "mobile") {
+        console.log("holaa");
+        icons.forEach(function (icon) {
+            let nameDiv = document.createElement("div");
+            nameDiv.innerHTML = icon;
+            fragment.appendChild(nameDiv);
+        })
+    }
+}
+
+showTecnologiesNames();
+grid.appendChild(fragment);
 /*Projects slider */
 
 window.addEventListener('load', () => {
@@ -73,13 +111,13 @@ window.addEventListener('load', () => {
         hoverpause: true,
         animationDuration: 5000,
         breakpoints: {
-            1000:{
-                perView:3
+            1000: {
+                perView: 3
             },
             800: {
                 perView: 2
             },
-            500: {
+            700: {
                 perView: 1
             }
         },

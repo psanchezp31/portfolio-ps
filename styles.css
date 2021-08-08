@@ -229,7 +229,7 @@ code {
     width: 280px;
 }
 
-#about-me-section{
+#about-me-section {
     padding-bottom: 30px;
 }
 
@@ -594,6 +594,7 @@ footer {
     #title-contact-container h3 {
         font-size: 45px;
     }
+
     #paula-photo {
         width: 270px;
     }
@@ -602,7 +603,8 @@ footer {
 @media screen and (max-width: 976px) {
 
     .content-section {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     #text-section {
@@ -623,6 +625,7 @@ footer {
 
     #cv-button {
         font-size: 30px;
+        height: 50px;
     }
 
     #description-profile p {
@@ -632,6 +635,7 @@ footer {
     #description-profile, #text-section code {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 }
 
@@ -720,6 +724,24 @@ footer {
 
 }
 
+@media screen and (max-width: 610px) {
+
+    #technologies-grid {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-around;
+    }
+
+    #technologies-grid i {
+        width: 150px;
+        height: 60px;
+    }
+
+    #technologies-grid > .overlay{
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 662px) {
     #cv-button {
         font-size: 20px;
@@ -743,6 +765,17 @@ footer {
 
     #image-hero {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 472px){
+    #technologies-grid i {
+        width: 120px;
+        height: 60px;
+    }
+
+    #technologies-grid > .overlay{
+        font-size: 35px;
     }
 }
 
@@ -775,7 +808,6 @@ footer {
 
     .links-container {
         display: grid;
-        grid-template-columns: repeat;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
         grid-gap: 20px;
@@ -789,7 +821,7 @@ footer {
         text-align: center;
     }
 
-    footer{
+    footer {
         font-size: 12px;
     }
 
