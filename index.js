@@ -1,3 +1,43 @@
+/*Projects slider */
+
+window.addEventListener('load', () => {
+
+    const glide = new Glide('.glide', {
+        type: "carousel",
+        touchAngle: 45,
+        focusAt: 1,
+        startAt: 1,
+        perView: 3.5,
+        keyboard: true,
+        gap: 20,
+        autoplay: false,
+        hoverpause: true,
+        animationDuration: 5000,
+        breakpoints: {
+            1000: {
+                perView: 3
+            },
+            800: {
+                perView: 2
+            },
+            700: {
+                perView: 1,
+                gap:5
+            }
+        },
+        peek: {
+            before: 50,
+            after: 50
+        },
+
+    })
+
+    glide.mount()
+
+})
+
+/*icons generator*/
+
 document.body.addEventListener("click", function (e) {
     if (e.target.matches("css-doodle")) {
         e.target.refresh();
@@ -71,66 +111,9 @@ function changeFontSizeScreenSize(event) {
 
 changeFontSizeScreenSize();
 
-
-const deviceType = () => {
-    const ua = navigator.userAgent;
-    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-        return "tablet";
-    } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
-        return "mobile";
-    }
-    return "desktop";
-};
-
-function showTecnologiesNames() {
-    if (deviceType() === "tablet" || deviceType() === "mobile") {
-        console.log("holaa");
-        icons.forEach(function (icon) {
-            let nameDiv = document.createElement("div");
-            nameDiv.innerHTML = icon;
-            fragment.appendChild(nameDiv);
-        })
-    }
-}
-
-showTecnologiesNames();
 grid.appendChild(fragment);
-/*Projects slider */
 
-window.addEventListener('load', () => {
 
-    const glide = new Glide('.glide', {
-        type: "carousel",
-        touchAngle: 45,
-        focusAt: 1,
-        startAt: 1,
-        perView: 3.5,
-        keyboard: true,
-        gap: 20,
-        autoplay: false,
-        hoverpause: true,
-        animationDuration: 5000,
-        breakpoints: {
-            1000: {
-                perView: 3
-            },
-            800: {
-                perView: 2
-            },
-            700: {
-                perView: 1
-            }
-        },
-        peek: {
-            before: 50,
-            after: 50
-        },
-
-    })
-
-    glide.mount()
-
-})
 
 
 

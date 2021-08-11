@@ -737,7 +737,7 @@ footer {
         height: 60px;
     }
 
-    #technologies-grid > .overlay{
+    #technologies-grid > .overlay {
         font-size: 40px;
     }
 }
@@ -768,13 +768,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 472px){
+@media screen and (max-width: 472px) {
     #technologies-grid i {
         width: 120px;
         height: 60px;
     }
 
-    #technologies-grid > .overlay{
+    #technologies-grid > .overlay {
         font-size: 35px;
     }
 }
@@ -787,11 +787,6 @@ footer {
     .container-section {
         padding-left: 30px;
         padding-right: 30px;
-    }
-
-    .wrapper-name {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     #title-contact-container h3 {
