@@ -766,6 +766,9 @@ footer {
     #image-hero {
         width: 100%;
     }
+    .project-tile {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 472px) {
@@ -817,6 +820,10 @@ footer {
     }
 
     footer {
+        font-size: 12px;
+    }
+
+    .project-tile {
         font-size: 12px;
     }
 
